@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOLOv4 이미지 분석</title>
+</head>
+<body>
+    <h1>이미지 분석 웹사이트</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">이미지 분석</button>
+    </form>
+    <div>
+        <h2>분석 결과:</h2>
+        <pre>{{ result }}</pre>
+        <img src="{{ image_path }}" alt="Uploaded Image">
+    </div>
+</body>
+</html>
